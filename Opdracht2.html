@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addition(){
+            let invoer1 = parseInt(document.getElementById("in1").value);
+            let invoer2 = parseInt(document.getElementById("in2").value);
+            let totaal = invoer1 + invoer2;
+            alert("De som is " + totaal);
+        }
+    </script>
+</head>
+
+<body>
+    <h1> Onze rekenmachine </h1>
+
+    <input type="number" id="in1">
+    <input type="number" id="in2">
+
+    <button type="button" onclick="addition()">
+        ACTIE!
+    </button>
+</body>
+
+</html>

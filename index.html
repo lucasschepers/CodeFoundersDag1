@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* tag styling (dit is een css comment) */
+        p {
+            color: green;
+        }
+
+        /* class styling. Het ding achter de punt is de selector. Voor font-size kun je ook pixels aangeven. */
+        .template1{
+            background-color: gray;
+            font-size: 150%; 
+        }
+
+        /* achter de hasttag is selector. id styling. */
+        #image1 {
+            border: 12px solid yellow;
+            width: 320px;
+        }
+    </style>
+
+    <script>
+        // we zijn in javascript en dit is een commentaar.
+        /*
+
+            een comment
+            voor meerdere
+            regels
+
+        */
+
+        let a = 6; // declaration
+        let b = "Tekst"; //mag ook met single quotes
+        let c = true;
+
+        b = "Tekst2"; // redefine is OK
+        const d = 12; // een constante die niet geherdefinieer mag worden.
+
+        function addition(){
+            let invoer1 = parseInt(document.getElementById("invoer1").value)
+            let invoer2 = parseInt(document.getElementById("invoer2").value)
+            let totaal = invoer1 + invoer2
+            alert('Totaal is ' + totaal);
+            }
+
+        addition();
+
+        function addition2(a, b){
+            let totaal = a + b;
+            alert("Uitkomst is " + totaal);
+        }
+
+        addition2(a, d)
+
+    </script>
+</head>
+
+<body>
+    <!--comment bla bla-->
+    <h1> Mijn website </h1>
+    <h2> Dit is mijn eerste website </h2>
+
+    <!-- paragraaf is een tekst met ruimte er boven en onder -->
+    <p> Dit is mijn eerste paragraaf.  </p>
+    <p> En dit is de tweede paragraaf. </p>
+
+    <span style="color: red; background-color: blue;"> Dit is mijn eerste span. de methode is in-line styling (mbh css). </span>
+    <span>Dit is mijn tweede span</span>
+
+    <!-- Lijsten -->
+    <ul>
+        <li class="template1 template2 zzzz"> class styling. niet gedefinieerde classes worden genegeerd. </li>
+        <li>Item 2</li>
+        <li>Zonder spatie bla bla bla ahjdfbsdjh as dfsdfjkasdf asd fkjsdf sahbdf ajcs web fjhskdbf as awueb kjsadn akwebfawfbjskld a fufwbefjka awlkejfb akjsklae falskfjb awekjf kjkd a kjebf klaekrlg   jasbekj kldfsl l kljbadrlk   grakjb kl  alkj bkjlb lkarg   ajlrgb kl  akejrbg ka d ardgjkb aela akjgba jka aergjka eg lakjrgkja gr ladkjabdfg aerklgjdf adflkjbadfg ladfkljbadfg adfkjbadf adflkjbadfg adfgkjb adfgkljbadfg adlkjgbadfg adfglkjbadf lk adfg ldfgkjdafga</li>
+        <li>Dubbele spaties          worden verwijderd </li>
+    </ul>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+    
+    <table>
+        <tr>
+            <td> Cell 1 </td>
+            <td> Cell 2 </td>
+        </tr>
+        <tr>
+            <td> Cell 3 </td>
+            <td> Cell 4 </td>
+            <td> Cell 5 </td>
+        </tr>
+    </table>
+
+    <!-- src is an attribute -->
+    <img id="image1" src="Schaatsbaan.jpg" width="300">
+
+    <br>
+
+    <a href="http://www.w3schools.com">
+        Klik hier
+    </a>
+    
+    <input type="number" id="invoer1">
+
+    <input type="number" id="invoer2">
+
+    <!-- inline javascript in the onclick value. -->
+    <button type="button" onclick="addition()">
+        Addition
+    </button>
+
+</body>
+</html>
